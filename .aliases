@@ -1,0 +1,44 @@
+# Use git to manage dotfiles.
+alias config="/usr/bin/git --git-dir=$HOME/.myconf/ --work-tree=$HOME"
+
+# Aliases for working with files.
+alias cp="cp -i"
+alias mv="mv -i"
+alias rm="rm -i"
+
+# Set servername for Vim.
+alias vim="vim --servername VIM"
+
+# Aliases for LaTeX.
+alias latexmk="latexmk -pdf -halt-on-error"
+
+# Aliases for C++.
+# Use g++-4.9?
+alias g++="g++ -Wall -g -std=c++11"
+
+# Use side-by-side `colordiff` in place of `diff`.
+alias diff="colordiff -y -W \$(( \$(tput cols) - 2 ))"
+
+# Suppress error messages.
+alias libreoffice=">/dev/null 2>&1 libreoffice"
+alias gvim=">/dev/null 2>&1 gvim"
+
+# Make it easier to `xdg-open`.
+alias op=">/dev/null 2>&1 xdg-open"
+
+# Go to current term's school directory.
+alias sch="cd ~/Documents/school/1185"
+
+# Start a new TeX document.
+newtex() {
+    cp ~/Documents/latex-preamble.tex $1.tex
+}
+
+# Merge PDFs.
+pdfmerge () {
+    if [[ $# -eq 0 ]] ; then
+        echo "Usage: pdfmerge output input1 input2 ..."
+        return
+    fi
+    gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/prepress -dNOPAUSE -dQUIET -dBATCH -dDetectDuplicateImages -dCompressFonts=true -r150 -sOutputFile=$@
+}
