@@ -1,0 +1,223 @@
+# Modifying text styles
+
+snippet bf "Bold"
+\\textbf\{${1}\}
+endsnippet
+
+snippet emp "Emphasis"
+\\emph\{${1}\}
+endsnippet
+
+snippet sc "Small caps"
+\\textsc\{${1}\}
+endsnippet
+
+snippet enq "Quotes"
+\\enquote\{${1}\}
+endsnippet
+
+snippet tt "Typewriter"
+\\texttt\{${1}\}
+endsnippet
+
+snippet under "Underline" w
+\\underline\{${1}\}
+endsnippet
+
+snippet over "Overline" w
+\\overline\{${1}\}
+endsnippet
+
+# Sectioning.
+
+snippet sec "Section" b
+%#####
+\\section\{${1}\}
+%#####
+endsnippet
+
+snippet sec* "Unnumbered section" b
+%#####
+\\section*\{${1}\}
+%#####
+endsnippet
+
+snippet sub "Subsection" b
+%=====
+\\subsection\{${1}\}
+%=====
+endsnippet
+
+snippet sub* "Unnumbered subsection" b
+%=====
+\\subsection*\{${1}\}
+%=====
+endsnippet
+
+snippet ssub "Subsubsection" b
+%-----
+\\subsubsection\{${1}\}
+%-----
+endsnippet
+
+snippet ssub* "Unnumbered subsubsection" b
+%-----
+\\subsubsection*\{${1}\}
+%-----
+endsnippet
+
+# Entering math mode.
+
+snippet im "Inline math"
+\\(${1}\\)
+endsnippet
+
+snippet dm "Display math"
+\\[
+	${1}
+\\]
+endsnippet
+
+# Creating environments.
+
+snippet "b(egin)?" "Begin and end environment" br
+\\begin\{${1}\}
+	${2}
+\\end\{$1\}
+endsnippet
+
+snippet enum "Enumerate" b
+\\begin\{enumerate\}
+	\\item ${1}
+\\end\{enumerate\}
+endsnippet
+
+snippet item "Itemize" b
+\\begin\{itemize\}
+	\\item ${1}
+\\end\{itemize\}
+endsnippet
+
+snippet it "Item" b
+\\item ${1}
+endsnippet
+
+snippet img "Include image" b
+\\begin\{center\}
+	\\includegraphics[scale=0.2]\{${1}\}
+\\end\{center\}
+endsnippet
+
+# For use in math mode.
+
+snippet lr( "Left and right parentheses" w
+\\left( ${1} \\right)
+endsnippet
+
+snippet lr[ "Left and right brackets" w
+\\left[ ${1} \\right]
+endsnippet
+
+snippet c{ "Curly braces" w
+\\\{${1}\\\}
+endsnippet
+
+snippet lr{ "Left and right brackets" w
+\\left\\\{ ${1} \\right\\\}
+endsnippet
+
+snippet abs "Absolute value" w
+\\lvert ${1} \\rvert
+endsnippet
+
+snippet lrabs "Left and right absolute value" w
+\\left\\lvert ${1} \\right\\rvert
+endsnippet
+
+snippet ang "Angle brackets" w
+\\langle ${1} \\rangle
+endsnippet
+
+snippet lrang "Left and right angle brackets" w
+\\left\\langle ${1} \\right\\rangle
+endsnippet
+
+snippet norm "Norm" w
+\\lVert ${1} \\rVert
+endsnippet
+
+snippet lrnorm "Left and right norm" w
+\\left\\lVert ${1} \\right\\rVert
+endsnippet
+
+snippet bb "Blackboard bold" w
+\\mathbb\{${1}\}
+endsnippet
+
+snippet cal "Script" w
+\\mathcal\{${1}\}
+endsnippet
+
+snippet rm "Upright math" w
+\\mathrm\{${1}\}
+endsnippet
+
+snippet frac "Fraction" w
+\\frac\{${1}\}\{${2}\}
+endsnippet
+
+snippet cfrac "Continued fraction" w
+\\cfrac\{${1}\}\{${2}\}
+endsnippet
+
+snippet sqrt "Square root" w
+\\sqrt\{${1}\}
+endsnippet
+
+snippet vec "Vector" w
+\\vec\{${1}\}
+endsnippet
+
+snippet bin "Binomial" w
+\\binom\{${1}\}\{${2}\}
+endsnippet
+
+snippet sum "Sum" w
+\\sum_\{${1}\}
+endsnippet
+
+snippet prod "Product" w
+\\prod_\{${1}\}
+endsnippet
+
+snippet max "Maximum" w
+\\max_\{${1}\}
+endsnippet
+
+snippet min "Minimum" w
+\\min_\{${1}\}
+endsnippet
+
+snippet gcd "GCD" w
+\\gcd(${1}, ${2})
+endsnippet
+
+snippet div "Divides" w
+\\divides
+endsnippet
+
+snippet ndiv "Does not divide" w
+\\ndivides
+endsnippet
+
+snippet pmod "Modulo in parentheses" w
+\\pmod\{${1}\}
+endsnippet
+
+snippet qq "Qquad space" w
+\\qquad
+endsnippet
+
+snippet text "Text mode" w
+\\text\{${1}\}
+endsnippet
