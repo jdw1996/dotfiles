@@ -36,12 +36,11 @@ if ! shopt -oq posix; then
 fi
 
 # Personalized settings and aliases.
-source ~/.git-prompt.sh
 if [[ $(id -u) -ne 0 ]] ; then
-    export PS1="\n\[\e[7m\]\u@\h \w\$(__git_ps1 ' \[\e[32m\]%s\[\e[39m\]') \\$\[\e[0m\] "
+    export PS1="\n\[\e[7m\]\u@\h \w \\$\[\e[0m\] "
     export PS2="\[\e[7m\]>\[\e[0m\] "
 else
-    export PS1="\n\[\e[7m\]\[\e[31m\]\u@\h \w\$(__git_ps1 ' \[\e[32m\]%s\[\e[31m\]') \\$\[\e[39m\]\[\e[27m\] "
+    export PS1="\n\[\e[7m\]\[\e[31m\]\u@\h \w \\$\[\e[39m\]\[\e[27m\] "
     export PS2="\[\e[7m\]\[\e[31m\]>\[\e[39m\]\[\e[27m\] "
 fi
 source ~/.aliases
