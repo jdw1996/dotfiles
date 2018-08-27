@@ -203,6 +203,12 @@ augroup strip_trailing_whitespace
     autocmd BufWritePre * call <SID>StripWhitespace()
 augroup END
 
+" Recognize `*.h` files as C files.
+augroup c_header_files
+    autocmd!
+    autocmd BufRead,BufNewFile *.h set filetype=c
+augroup END
+
 " Copy all macro.
 let @a = 'gg"+yG``'
 
