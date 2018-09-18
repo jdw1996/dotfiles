@@ -48,3 +48,6 @@ export PATH="${PATH}:/usr/lib/dart/bin:$HOME/.pub-cache/bin:$HOME/bin:$HOME/.loc
 
 # Stop Ctrl-s from freezing the terminal.
 stty -ixon
+
+# Provide facts about the current date.
+calendar -A 0
