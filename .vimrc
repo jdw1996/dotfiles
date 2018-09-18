@@ -125,6 +125,9 @@ set nrformats+=alpha
 set hlsearch
 nnoremap <Leader><Space> :nohlsearch<CR>
 
+" Search case-insensitive.
+set ignorecase
+
 """""""""""""
 " APPEARANCE
 """""""""""""
