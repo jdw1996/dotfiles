@@ -125,7 +125,7 @@ set nrformats+=alpha
 
 " Highlight search results and clear highlighting.
 set hlsearch
-nnoremap <silent> <Leader><Space> :nohlsearch<CR>
+nnoremap <silent> <Space> :nohlsearch<CR>
 
 """""""""""""
 " APPEARANCE
