@@ -65,10 +65,10 @@ nmap <Leader>Y "+Y
 vnoremap <Leader>y "+y
 vnoremap <Leader>d "+d
 vmap <Leader>Y "+Y
-nnoremap <Leader>p :set paste<CR>"+p:set nopaste<CR>
-nnoremap <Leader>P :set paste<CR>"+P:set nopaste<CR>
-vnoremap <Leader>p :set paste<CR>"+p:set nopaste<CR>
-vnoremap <Leader>P :set paste<CR>"+P:set nopaste<CR>
+nnoremap <silent> <Leader>p :set paste<CR>"+p:set nopaste<CR>
+nnoremap <silent> <Leader>P :set paste<CR>"+P:set nopaste<CR>
+vnoremap <silent> <Leader>p :set paste<CR>"+p:set nopaste<CR>
+vnoremap <silent> <Leader>P :set paste<CR>"+P:set nopaste<CR>
 
 " Auto-detect indentation and filetype.
 set autoindent
@@ -105,10 +105,10 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 
 " Resize splits.
-nnoremap <C-Left>  :vertical resize -1<CR>
-nnoremap <C-Down>  :resize -1<CR>
-nnoremap <C-Up>    :resize +1<CR>
-nnoremap <C-Right> :vertical resize +1<CR>
+nnoremap <silent> <C-Left>  :vertical resize -1<CR>
+nnoremap <silent> <C-Down>  :resize -1<CR>
+nnoremap <silent> <C-Up>    :resize +1<CR>
+nnoremap <silent> <C-Right> :vertical resize +1<CR>
 
 " Better command-line completion.
 set wildmenu
@@ -125,7 +125,7 @@ set nrformats+=alpha
 
 " Highlight search results and clear highlighting.
 set hlsearch
-nnoremap <Leader><Space> :nohlsearch<CR>
+nnoremap <silent> <Leader><Space> :nohlsearch<CR>
 
 """""""""""""
 " APPEARANCE
