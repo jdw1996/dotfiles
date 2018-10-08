@@ -211,9 +211,6 @@ augroup c_header_files
     autocmd BufRead,BufNewFile *.h set filetype=c
 augroup END
 
-" Copy all macro.
-let @a = 'gg"+yG``'
-
 " Get current highlight group.
 function! SynStack() abort
   if !exists("*synstack")
