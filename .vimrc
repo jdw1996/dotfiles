@@ -41,22 +41,8 @@ set hidden
 " Deal with backspace properly.
 set backspace=indent,eol,start
 
-" Map `W` to write as well.
-command W w
-command Q q
-command Wq wq
-command WQ wq
-
 " Make `Y` yank till end of line.
 nnoremap Y y$
-
-" Move to beginning and end of line easier.
-nnoremap H ^
-nnoremap L $
-vnoremap H ^
-vnoremap L g_
-nnoremap gh H
-nnoremap gl L
 
 " Use leader key to access system clipboard.
 nnoremap <Leader>y "+y
