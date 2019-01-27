@@ -22,6 +22,7 @@ alias diff="colordiff -y -W \$(( \$(tput cols) - 2 ))"
 # Suppress error messages.
 alias libreoffice=">/dev/null 2>&1 libreoffice"
 alias gvim=">/dev/null 2>&1 gvim"
+alias atril=">/dev/null 2>&1 atril"
 
 # Make it easier to `xdg-open`.
 alias op=">/dev/null 2>&1 xdg-open"
