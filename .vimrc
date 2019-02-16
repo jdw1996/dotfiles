@@ -46,6 +46,9 @@ set backspace=indent,eol,start
 " Make `Y` yank till end of line.
 nnoremap Y y$
 
+" Make it easier to save the file.
+nnoremap <silent> S :update<CR>
+
 " Use leader key to access system clipboard.
 nnoremap <Leader>y "+y
 nnoremap <Leader>d "+d
