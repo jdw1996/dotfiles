@@ -196,6 +196,18 @@ augroup strip_trailing_whitespace
     autocmd BufWritePre * call <SID>StripWhitespace()
 augroup END
 
+" Easier bracket and quote completion.
+inoremap (( ()<Esc>i
+inoremap {{ {}<Esc>i
+inoremap }} {<CR><CR>}<Esc>kcc
+inoremap [[ []<Esc>i
+inoremap "" ""<Esc>i
+inoremap '' ''<Esc>i
+inoremap `` ``<Esc>i
+
+" Highlight row and column in normal mode.
+nnoremap <silent> <Leader>ch :set cursorline! cursorcolumn!<CR>
+
 " Recognize `*.h` files as C files.
 augroup c_header_files
     autocmd!
