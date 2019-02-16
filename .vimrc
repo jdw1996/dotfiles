@@ -215,10 +215,10 @@ augroup c_header_files
 augroup END
 
 " Get current highlight group.
-function! SynStack() abort
+function! <SID>SynStack() abort
   if !exists("*synstack")
     return
   endif
   echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
-endfunc
+endfunction
 nnoremap <Leader>sy :call SynStack()<CR>
