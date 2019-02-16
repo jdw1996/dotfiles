@@ -19,6 +19,8 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 " Repeat commands from plugins properly.
 Plug 'tpope/vim-repeat'
+" Make `FfTt` easier to use.
+Plug 'unblevable/quick-scope'
 " Handle sessions easily.
 Plug 'tpope/vim-obsession'
 " Enable snippets.
