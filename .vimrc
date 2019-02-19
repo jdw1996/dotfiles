@@ -108,9 +108,6 @@ set wildmenu
 set backupdir=~/.vim/backup//
 set directory=~/.vim/swp//
 
-" Indicate sentence's end with two spaces.
-set cpoptions+=J
-
 " Increment and decrement letters with Ctrl-a and Ctrl-x.
 set nrformats+=alpha
 
