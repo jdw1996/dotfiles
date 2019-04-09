@@ -27,8 +27,6 @@ Plug 'SirVer/ultisnips'
 Plug 'jdw1996/vim-wiperblades'
 " Better LaTeX support.
 Plug 'lervag/vimtex', {'for' : 'tex'}
-" Dart support.
-Plug 'dart-lang/dart-vim-plugin', {'for' : 'dart'}
 call plug#end()
 
 """"""""""""""
