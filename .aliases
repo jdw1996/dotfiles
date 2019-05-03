@@ -27,9 +27,6 @@ alias atril=">/dev/null 2>&1 atril"
 # Make it easier to `xdg-open`.
 alias op=">/dev/null 2>&1 xdg-open"
 
-# Go to current term's school directory.
-alias sch="cd ~/Documents/school/1191"
-
 # Start a new TeX document.
 newtex() {
     cp ~/Documents/latex-preamble.tex $1.tex
