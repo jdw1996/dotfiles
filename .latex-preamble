@@ -1,0 +1,73 @@
+\documentclass[letterpaper]{}
+
+%*************************************
+%
+% {{TITLE}}
+%
+% By Joseph Winters
+% Document created {{DATE}}
+% Preamble last updated April 3, 2019
+%
+%*************************************
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{centernot}
+\usepackage{csquotes}
+%\usepackage{enumitem}
+\usepackage{fancyhdr}
+%\usepackage{fancyvrb}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{lmodern}
+%\usepackage{multicol}
+\usepackage{titling}
+
+\title{}
+\author{}
+\date{}
+
+\pagestyle{fancy}
+\lhead{\theauthor}
+\chead{\thetitle}
+\rhead{\thedate}
+\lfoot{}
+\cfoot{\thepage}
+\rfoot{}
+
+% Commands: one-liners.
+\newcommand{\cupdot}{\mathbin{\dot{\cup}}}
+\newcommand{\soln}{\ \\ \noindent\textit{Solution.}\ }
+\renewcommand{\setminus}{\smallsetminus}
+\newcommand{\st}{\mid}
+\newcommand{\legendre}[2]{\left( \frac{#1}{#2} \right)}
+\newcommand{\divides}{\mid}
+\newcommand{\ndivides}{\nmid}
+
+% Enable bigger matrices
+\setcounter{MaxMatrixCols}{20}
+
+% Set theorem styles
+\theoremstyle{definition}
+\newtheorem*{definition}{Definition}
+
+\theoremstyle{plain}
+\newtheorem*{theorem}{Theorem}
+
+\theoremstyle{plain}
+\newtheorem*{lemma}{Lemma}
+
+\theoremstyle{plain}
+\newtheorem*{corollary}{Corollary}
+
+\theoremstyle{plain}
+\newtheorem*{proposition}{Proposition}
+
+% Use one space after end-punctuation
+\frenchspacing
+
+\begin{document}
+
+\end{document}
