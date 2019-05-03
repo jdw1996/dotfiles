@@ -40,3 +40,12 @@ pdfmerge () {
     fi
     gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.4 -dPDFSETTINGS=/prepress -dNOPAUSE -dQUIET -dBATCH -dDetectDuplicateImages -dCompressFonts=true -r150 -sOutputFile=$@
 }
+
+# Get a random band.
+band () {
+    name=""
+    while [ "${name}" == "" ] ; do
+        name="$(shuf -n 1 ~/Documents/bands.txt)"
+    done
+    echo "${name}"
+}
