@@ -60,6 +60,7 @@ vnoremap <silent> <Leader>P :set paste<CR>"+P:set nopaste<CR>
 " Auto-detect indentation and filetype.
 set autoindent
 filetype plugin indent on
+syntax on
 
 " Setup default indentation.
 set softtabstop=4
