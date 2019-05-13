@@ -16,9 +16,6 @@ alias latexmk="latexmk -pdf -halt-on-error"
 # Use g++-4.9?
 alias g++="g++ -Wall -g -std=c++11"
 
-# Use side-by-side `colordiff` in place of `diff`.
-alias diff="colordiff -y -W \$(( \$(tput cols) - 2 ))"
-
 # Suppress error messages.
 alias libreoffice=">/dev/null 2>&1 libreoffice"
 alias gvim=">/dev/null 2>&1 gvim"
