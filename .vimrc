@@ -11,8 +11,6 @@ scriptencoding utf-8
 """""""""""""""
 
 call plug#begin('~/.vim/plugged')
-" Make 'cw' and 'cW' work properly.
-Plug 'ap/vim-you-keep-using-that-word'
 " Surround text in brackets, quotes, tags.
 Plug 'tpope/vim-surround'
 " Toggle commented lines with `gc`.
@@ -23,8 +21,6 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-obsession'
 " Enable snippets.
 Plug 'SirVer/ultisnips'
-" Wiperblades colour scheme.
-Plug 'jdw1996/vim-wiperblades'
 " Better LaTeX support.
 Plug 'lervag/vimtex', {'for' : 'tex'}
 call plug#end()
@@ -32,6 +28,18 @@ call plug#end()
 """"""""""""""
 " BASIC SETUP
 """"""""""""""
+
+" Turn on syntax highlighting.
+syntax on
+
+" Set defaults for indentation.
+set autoindent
+set softtabstop=4
+set shiftwidth=4
+set expandtab
+
+" Load filetype-specific settings.
+filetype plugin indent on
 
 " Handle multiple unsaved buffers properly.
 set hidden
@@ -57,23 +65,12 @@ nnoremap <silent> <Leader>P :set paste<CR>"+P:set nopaste<CR>
 vnoremap <silent> <Leader>p :set paste<CR>"+p:set nopaste<CR>
 vnoremap <silent> <Leader>P :set paste<CR>"+P:set nopaste<CR>
 
-" Auto-detect indentation and filetype.
-set autoindent
-filetype plugin indent on
-syntax on
-
-" Setup default indentation.
-set softtabstop=4
-set shiftwidth=4
-set expandtab
-
 " Soft word wrap.
 set wrap
 set linebreak
 set nolist
 set breakindent
 set showbreak=┊
-set breakindentopt=sbr
 set breakindentopt=shift:1
 
 " Make split windows more intuitive.
@@ -105,9 +102,6 @@ set wildmenu
 set backupdir=~/.vim/backup//
 set directory=~/.vim/swp//
 
-" Increment and decrement letters with Ctrl-a and Ctrl-x.
-set nrformats+=alpha
-
 " Highlight search results and clear highlighting.
 set hlsearch
 nnoremap <silent> <Space> :nohlsearch<CR>
@@ -117,7 +111,7 @@ nnoremap <silent> <Space> :nohlsearch<CR>
 """""""""""""
 
 " Set colour scheme.
-colorscheme wiperblades
+colorscheme default
 
 " Tell terminal how to italicize.
 set t_ZH=[3m
@@ -147,6 +141,9 @@ let g:UltiSnipsExpandTrigger = '<Tab>'
 let g:UltiSnipsJumpForwardTrigger = '<Tab>'
 let g:UltiSnipsJumpBackwardTrigger = '<S-Tab>'
 
+" Set the directory to look for snippets in.
+let g:UltiSnipsSnippetDirectories=[$HOME.'/.vim/my-snippets']
+
 " Always use LaTeX in `*.tex` files.
 let g:tex_flavor='latex'
 
@@ -156,9 +153,6 @@ let g:vimtex_compiler_latexmk = {
       \   '-pdf'
       \ ]
       \}
-
-" Set the directory to look for snippets in.
-let g:UltiSnipsSnippetDirectories=[$HOME.'/.vim/my-snippets']
 
 """"""""""""""
 " SPELL-CHECK
@@ -207,12 +201,3 @@ augroup c_header_files
     autocmd!
     autocmd BufRead,BufNewFile *.h set filetype=c
 augroup END
-
-" Get current highlight group.
-function! <SID>SynStack() abort
-  if !exists("*synstack")
-    return
-  endif
-  echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
-endfunction
-nnoremap <Leader>sy :call <SID>SynStack()<CR>
