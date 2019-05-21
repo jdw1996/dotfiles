@@ -98,6 +98,12 @@ nnoremap <silent> <C-Right> :vertical resize +1<CR>
 " Better command-line completion.
 set wildmenu
 
+" Don't automatically continue comments.
+augroup comment_continuation
+    autocmd!
+    autocmd BufNewFile,BufRead * setlocal formatoptions-=cro
+augroup END
+
 " Save swap and backup files in `.vim`.
 set backupdir=~/.vim/backup//
 set directory=~/.vim/swp//
