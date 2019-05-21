@@ -1,4 +1,4 @@
-" Setup default indentation.
-set softtabstop=2
-set shiftwidth=2
-set expandtab
+" Set up default indentation.
+setlocal softtabstop=2
+setlocal shiftwidth=2
+setlocal expandtab
