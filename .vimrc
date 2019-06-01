@@ -191,13 +191,13 @@ augroup strip_trailing_whitespace
 augroup END
 
 " Easier bracket and quote completion.
-inoremap (( ()<Esc>i
-inoremap {{ {}<Esc>i
+inoremap (( ()<Left>
+inoremap {{ {}<Left>
 inoremap }} {<CR><CR>}<Esc>kcc
-inoremap [[ []<Esc>i
-inoremap "" ""<Esc>i
-inoremap '' ''<Esc>i
-inoremap `` ``<Esc>i
+inoremap [[ []<Left>
+inoremap "" ""<Left>
+inoremap '' ''<Left>
+inoremap `` ``<Left>
 
 " Highlight row and column in normal mode.
 nnoremap <silent> <Leader>ch :set cursorline! cursorcolumn!<CR>
