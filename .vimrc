@@ -192,9 +192,11 @@ augroup END
 
 " Easier bracket and quote completion.
 inoremap (( ()<Left>
+inoremap )) (<CR><CR>)<Esc>kcc
 inoremap {{ {}<Left>
 inoremap }} {<CR><CR>}<Esc>kcc
 inoremap [[ []<Left>
+inoremap ]] [<CR><CR>]<Esc>kcc
 inoremap "" ""<Left>
 inoremap '' ''<Left>
 inoremap `` ``<Left>
