@@ -15,14 +15,8 @@ call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-surround'
 " Toggle commented lines with `gc`.
 Plug 'tpope/vim-commentary'
-" Repeat commands from plugins properly.
-Plug 'tpope/vim-repeat'
 " Handle sessions easily.
 Plug 'tpope/vim-obsession'
-" Enable snippets.
-Plug 'SirVer/ultisnips'
-" Better LaTeX support.
-Plug 'lervag/vimtex', {'for' : 'tex'}
 call plug#end()
 
 """"""""""""""
@@ -138,28 +132,6 @@ set statusline+=\ %Y          " Show the type of file in the buffer.
 set statusline+=\ %l:%v       " Show the line number and virtual column number.
 set statusline+=\ %P          " Show the percent progress through the file.
 
-""""""""""""""""""
-" PLUGIN SETTINGS
-""""""""""""""""""
-
-" Better keybindings for UltiSnipsExpandTrigger.
-let g:UltiSnipsExpandTrigger = '<Tab>'
-let g:UltiSnipsJumpForwardTrigger = '<Tab>'
-let g:UltiSnipsJumpBackwardTrigger = '<S-Tab>'
-
-" Set the directory to look for snippets in.
-let g:UltiSnipsSnippetDirectories=[$HOME.'/.vim/my-snippets']
-
-" Always use LaTeX in `*.tex` files.
-let g:tex_flavor='latex'
-
-" Use proper options for latexmk.
-let g:vimtex_compiler_latexmk = {
-      \ 'options' : [
-      \   '-pdf'
-      \ ]
-      \}
-
 """"""""""""""
 " SPELL-CHECK
 """"""""""""""
@@ -170,9 +142,6 @@ augroup spell_check
     autocmd!
     autocmd BufRead,BufNewFile *.md,*.tex setlocal spell
 augroup END
-
-" Don't spell-check LaTeX comments.
-let g:tex_comment_nospell=1
 
 """""""""""""""""""""""""""
 " MACROS & CUSTOM COMMANDS
