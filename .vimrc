@@ -43,7 +43,6 @@ set backspace=indent,eol,start
 
 " Map `kj` to Escape.
 inoremap kj <Esc>
-vnoremap kj <Esc>
 
 " Make `Y` yank till end of line.
 nnoremap Y y$
