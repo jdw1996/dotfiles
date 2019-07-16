@@ -28,9 +28,10 @@ syntax on
 
 " Set defaults for indentation.
 set autoindent
+set tabstop=4
 set softtabstop=4
 set shiftwidth=4
-set expandtab
+set noexpandtab
 
 " Load filetype-specific settings.
 filetype plugin indent on
