@@ -94,6 +94,7 @@ nnoremap <silent> <C-Up>    :resize +1<CR>
 nnoremap <silent> <C-Right> :vertical resize +1<CR>
 
 " Better command-line completion.
+set wildmode=longest,list
 set wildmenu
 
 " Don't automatically continue comments.
