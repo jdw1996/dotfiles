@@ -113,6 +113,7 @@ nnoremap <silent> <Space> :nohlsearch<CR>
 """""""""""""
 
 " Set colour scheme.
+" colorscheme default
 colorscheme default
 
 " Tell terminal how to italicize.
