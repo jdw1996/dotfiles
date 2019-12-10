@@ -17,6 +17,8 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 " Handle sessions easily.
 Plug 'tpope/vim-obsession'
+" Git support.
+Plug 'tpope/vim-fugitive'
 " Colour scheme.
 Plug 'jdw1996/vim-wiperblades'
 call plug#end()
