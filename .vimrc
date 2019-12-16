@@ -114,6 +114,9 @@ set smartcase
 set hlsearch
 nnoremap <silent> <Space> :nohlsearch<CR>
 
+" Tell Vim where to find tags.
+set tags^=./.git/tags;
+
 """""""""""""
 " APPEARANCE
 """""""""""""
