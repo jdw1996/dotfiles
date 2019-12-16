@@ -106,6 +106,10 @@ augroup END
 set backupdir=~/.vim/backup//
 set directory=~/.vim/swp//
 
+" Search with smart case matching.
+set ignorecase
+set smartcase
+
 " Highlight search results and clear highlighting.
 set hlsearch
 nnoremap <silent> <Space> :nohlsearch<CR>
