@@ -19,8 +19,6 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-obsession'
 " Git support.
 Plug 'tpope/vim-fugitive'
-" Colour scheme.
-Plug 'jdw1996/vim-wiperblades'
 call plug#end()
 
 """"""""""""""
@@ -117,7 +115,7 @@ nnoremap <silent> <Space> :nohlsearch<CR>
 """""""""""""
 
 " Set colour scheme.
-colorscheme wiperblades
+colorscheme default
 
 " Tell terminal how to italicize.
 set t_ZH=[3m
