@@ -6,20 +6,12 @@ alias cp="cp -i"
 alias mv="mv -i"
 alias rm="rm -i"
 
-# Set servername for Vim.
-alias vim="vim --servername VIM"
-
 # Aliases for LaTeX.
 alias latexmk="latexmk -pdf -halt-on-error"
 
 # Aliases for C++.
 # Use g++-4.9?
 alias g++="g++ -Wall -g -std=c++11"
-
-# Suppress error messages.
-alias libreoffice=">/dev/null 2>&1 libreoffice"
-alias gvim=">/dev/null 2>&1 gvim"
-alias atril=">/dev/null 2>&1 atril"
 
 # Make it easier to `xdg-open`.
 alias op=">/dev/null 2>&1 xdg-open"
