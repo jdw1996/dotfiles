@@ -13,9 +13,6 @@ alias latexmk="latexmk -pdf -halt-on-error"
 # Use g++-4.9?
 alias g++="g++ -Wall -g -std=c++11"
 
-# Make it easier to `xdg-open`.
-alias op=">/dev/null 2>&1 xdg-open"
-
 # Start a new TeX document.
 newtex() {
     cp ~/.latex-preamble $1.tex
