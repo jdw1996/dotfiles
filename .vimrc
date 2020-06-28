@@ -106,6 +106,10 @@ augroup END
 set backupdir=~/.vim/backup//
 set directory=~/.vim/swp//
 
+" Save undo history across sessions.
+set undodir=~/.vim/undo
+set undofile
+
 " Search with smart case matching.
 set ignorecase
 set smartcase
