@@ -118,8 +118,8 @@ set smartcase
 set hlsearch
 nnoremap <silent> <Space> :nohlsearch<CR>
 
-" Tell Vim where to find tags.
-set tags^=./.git/tags;
+" Don't flash the screen when errors occur.
+set novisualbell
 
 """""""""""""
 " APPEARANCE
