@@ -48,3 +48,7 @@ export PATH="${PATH}:/usr/lib/dart/bin:$HOME/.pub-cache/bin:$HOME/bin:$HOME/.loc
 
 # Stop Ctrl-s from freezing the terminal.
 stty -ixon
+
+# Set Vim to be the default editor.
+export VISUAL=vim
+export EDITOR="$VISUAL"
