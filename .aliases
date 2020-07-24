@@ -1,5 +1,5 @@
 # Use git to manage dotfiles.
-alias config="/usr/bin/git --git-dir=$HOME/.myconf/ --work-tree=$HOME"
+alias config="git --git-dir=$HOME/.myconf/ --work-tree=$HOME"
 
 # Aliases for working with files.
 alias cp="cp -i"
