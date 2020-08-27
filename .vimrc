@@ -118,7 +118,8 @@ set smartcase
 set hlsearch
 nnoremap <silent> <Space> :nohlsearch<CR>
 
-" Don't flash the screen when errors occur.
+" Don't flash the screen or beep when errors occur.
+set belloff=all
 set novisualbell
 
 """""""""""""
