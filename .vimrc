@@ -96,6 +96,9 @@ nnoremap <silent> <C-Right> :vertical resize +1<CR>
 set wildmode=longest,list
 set wildmenu
 
+" Let cursor reach bottom of screen.
+set scrolloff=0
+
 " Don't automatically continue comments.
 augroup comment_continuation
     autocmd!
