@@ -52,3 +52,6 @@ stty -ixon
 # Set Vim to be the default editor.
 export VISUAL=vim
 export EDITOR="$VISUAL"
+
+echo "We’ve got to start thinking of the Internet as something more than a glow-in-the-dark newspaper."
+echo "    Jon Bois"
