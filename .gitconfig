@@ -2,7 +2,7 @@
 	name = Joseph Daniel Winters
 	email = jdwinters96@gmail.com
 [credential]
-	helper = cache --timeout=3600
+	helper = wincred
 [alias]
 	hist = log --pretty=format:\"%C(red)%h%C(reset) %C(cyan)%ad%C(reset) | %s%d%  %C(bold blue)[%an]%C(reset)%C(bold green)%d%C(reset) %C(bold red)[%G?]%C(reset)%n\" --graph --date=relative --color
 [core]
