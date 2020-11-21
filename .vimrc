@@ -57,10 +57,10 @@ nmap <Leader>Y "+Y
 vnoremap <Leader>y "+y
 vnoremap <Leader>d "+d
 vmap <Leader>Y "+Y
-nnoremap <silent> <Leader>p :set paste<CR>"+p:set nopaste<CR>
-nnoremap <silent> <Leader>P :set paste<CR>"+P:set nopaste<CR>
-vnoremap <silent> <Leader>p :set paste<CR>"+p:set nopaste<CR>
-vnoremap <silent> <Leader>P :set paste<CR>"+P:set nopaste<CR>
+nnoremap <Leader>p "+p
+nnoremap <Leader>P "+P
+vnoremap <Leader>p "+p
+vnoremap <Leader>P "+P
 
 " Soft word wrap.
 set wrap
