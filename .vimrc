@@ -19,6 +19,9 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-obsession'
 " Git support.
 Plug 'tpope/vim-fugitive'
+" Fuzzy find.
+Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
 call plug#end()
 
 """"""""""""""
@@ -197,3 +200,15 @@ augroup c_header_files
     autocmd!
     autocmd BufRead,BufNewFile *.h set filetype=c
 augroup END
+
+""""""""""""""""
+" PLUGIN CONFIG
+""""""""""""""""
+
+" Jump to the existing buffer if possible.
+let g:fzf_buffers_jump = 1
+
+" FZF mappings.
+nnoremap <leader>f :Files<CR>
+nnoremap <leader>l :Lines<CR>
+nnoremap <leader>b :Buffers<CR>
