@@ -8,3 +8,7 @@
 	editor = vim
 [merge]
 	tool = vimdiff
+[credential]
+	helper = store
+[mergetool]
+	keepBackup = false
