@@ -11,6 +11,8 @@ scriptencoding utf-8
 """""""""""""""
 
 call plug#begin('~/.vim/plugged')
+" Properly repeat commands from plugins.
+Plug 'tpope/vim-repeat'
 " Surround text in brackets, quotes, tags.
 Plug 'tpope/vim-surround'
 " Toggle commented lines with `gc`.
