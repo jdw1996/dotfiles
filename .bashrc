@@ -53,7 +53,7 @@ stty -ixon
 export VISUAL=vim
 export EDITOR="$VISUAL"
 
-echo "We’ve got to start thinking of the Internet as something more than a glow-in-the-dark newspaper."
+echo "We've got to start thinking of the Internet as something more than a glow-in-the-dark newspaper."
 echo "    Jon Bois"
 echo ""
 echo "Specialization is for insects."
