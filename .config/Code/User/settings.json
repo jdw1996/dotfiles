@@ -17,6 +17,7 @@
     "editor.fontSize": 16,
     "vim.incsearch": true,
     "vim.hlsearch": true,
+    "vim.cursorStylePerMode.insert": "line",
     "vim.normalModeKeyBindingsNonRecursive": [
         {
             "before": [
