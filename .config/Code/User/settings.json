@@ -256,12 +256,11 @@
     "editor.minimap.enabled": false,
     "gitlens.advanced.telemetry.enabled": false,
     "gitlens.blame.heatmap.enabled": false,
-    "gitlens.currentLine.enabled": false,
     "gitlens.hovers.currentLine.over": "line",
-    "gitlens.codeLens.enabled": false,
     "gitlens.hovers.enabled": false,
     "window.menuBarVisibility": "toggle",
     "[html]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
+    "gitlens.codeLens.enabled": false,
 }
