@@ -1,266 +1,153 @@
 {
-    "keyboard.dispatch": "keyCode",
-    "editor.tokenColorCustomizations": {
-        "textMateRules": [
-            {
-                "scope": "comment",
-                "settings": {
-                    "fontStyle": "italic"
-                }
-            }
-        ]
+  "keyboard.dispatch": "keyCode",
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "comment",
+        "settings": {
+          "fontStyle": "italic"
+        }
+      }
+    ]
+  },
+  "workbench.colorTheme": "Default Light+",
+  "editor.fontFamily": "Josevka, Hack, Consolas, 'Courier New', monospace",
+  "editor.cursorBlinking": "solid",
+  "editor.cursorStyle": "block",
+  "editor.fontSize": 20,
+  "vim.incsearch": true,
+  "vim.hlsearch": true,
+  "vim.cursorStylePerMode.insert": "line",
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["S"],
+      "commands": [":w"]
     },
-    "workbench.colorTheme": "Default Light+",
-    "editor.fontFamily": "Josevka, Hack, Consolas, 'Courier New', monospace",
-    "editor.cursorBlinking": "solid",
-    "editor.cursorStyle": "block",
-    "editor.fontSize": 16,
-    "vim.incsearch": true,
-    "vim.hlsearch": true,
-    "vim.cursorStylePerMode.insert": "line",
-    "vim.normalModeKeyBindingsNonRecursive": [
-        {
-            "before": [
-                "S"
-            ],
-            "commands": [
-                ":w"
-            ]
-        },
-        {
-            "before": [
-                "<Space>"
-            ],
-            "commands": [
-                ":nohlsearch"
-            ]
-        },
-        {
-            "before": [
-                "<C-h>"
-            ],
-            "after": [
-                "<C-w>",
-                "h"
-            ]
-        },
-        {
-            "before": [
-                "<C-j>"
-            ],
-            "after": [
-                "<C-w>",
-                "j"
-            ]
-        },
-        {
-            "before": [
-                "<C-k>"
-            ],
-            "after": [
-                "<C-w>",
-                "k"
-            ]
-        },
-        {
-            "before": [
-                "<C-l>"
-            ],
-            "after": [
-                "<C-w>",
-                "l"
-            ]
-        },
-        {
-            "before": [
-                "Y"
-            ],
-            "after": [
-                "y",
-                "$"
-            ]
-        },
-        {
-            "before": [
-                "<Leader>",
-                "y"
-            ],
-            "after": [
-                "\"",
-                "+",
-                "y"
-            ]
-        },
-        {
-            "before": [
-                "<Leader>",
-                "d"
-            ],
-            "after": [
-                "\"",
-                "+",
-                "d"
-            ]
-        },
-        {
-            "before": [
-                "<Leader>",
-                "p"
-            ],
-            "after": [
-                "\"",
-                "+",
-                "p"
-            ]
-        },
-        {
-            "before": [
-                "<Leader>",
-                "P"
-            ],
-            "after": [
-                "\"",
-                "+",
-                "P"
-            ]
-        },
-        {
-            "before": [
-                "[",
-                "c"
-            ],
-            "commands": [
-                "merge-conflict.previous"
-            ]
-        },
-        {
-            "before": [
-                "]",
-                "c"
-            ],
-            "commands": [
-                "merge-conflict.next"
-            ]
-        }
-    ],
-    "vim.normalModeKeyBindings": [
-        {
-            "before": [
-                "<Leader>",
-                "Y"
-            ],
-            "after": [
-                "\"",
-                "+",
-                "Y"
-            ]
-        }
-    ],
-    "vim.visualModeKeyBindingsNonRecursive": [
-        {
-            "before": [
-                "<Leader>",
-                "y"
-            ],
-            "after": [
-                "\"",
-                "+",
-                "y"
-            ]
-        },
-        {
-            "before": [
-                "<Leader>",
-                "d"
-            ],
-            "after": [
-                "\"",
-                "+",
-                "d"
-            ]
-        },
-        {
-            "before": [
-                "<Leader>",
-                "p"
-            ],
-            "after": [
-                "\"",
-                "+",
-                "p"
-            ]
-        },
-        {
-            "before": [
-                "<Leader>",
-                "P"
-            ],
-            "after": [
-                "\"",
-                "+",
-                "P"
-            ]
-        }
-    ],
-    "vim.visualModeKeyBindings": [
-        {
-            "before": [
-                "<Leader>",
-                "Y"
-            ],
-            "after": [
-                "\"",
-                "+",
-                "Y"
-            ]
-        }
-    ],
-    "window.zoomLevel": 0,
-    "editor.tabSize": 2,
-    "files.trimTrailingWhitespace": true,
-    "editor.renderLineHighlight": "none",
-    "editor.formatOnSave": true,
-    "eslint.validate": [
-        "javascript",
-        "javascriptreact",
-        "typescript",
-        "typescriptreact"
-    ],
-    "[javascript]": {
-        "editor.codeActionsOnSave": {
-            "source.fixAll.eslint": true
-        },
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    {
+      "before": ["<Space>"],
+      "commands": [":nohlsearch"]
     },
-    "[javascriptreact]": {
-        "editor.codeActionsOnSave": {
-            "source.fixAll.eslint": true
-        }
+    {
+      "before": ["<C-h>"],
+      "after": ["<C-w>", "h"]
     },
-    "[typescript]": {
-        "editor.formatOnSave": false,
-        "editor.codeActionsOnSave": {
-            "source.fixAll.eslint": true
-        }
+    {
+      "before": ["<C-j>"],
+      "after": ["<C-w>", "j"]
     },
-    "[typescriptreact]": {
-        "editor.formatOnSave": false,
-        "editor.codeActionsOnSave": {
-            "source.fixAll.eslint": true
-        }
+    {
+      "before": ["<C-k>"],
+      "after": ["<C-w>", "k"]
     },
-    "editor.renderWhitespace": "none",
-    "files.eol": "\n",
-    "editor.wordWrap": "on",
-    "editor.wrappingIndent": "indent",
-    "editor.minimap.enabled": false,
-    "gitlens.advanced.telemetry.enabled": false,
-    "gitlens.blame.heatmap.enabled": false,
-    "gitlens.hovers.currentLine.over": "line",
-    "gitlens.hovers.enabled": false,
-    "window.menuBarVisibility": "toggle",
-    "[html]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    {
+      "before": ["<C-l>"],
+      "after": ["<C-w>", "l"]
     },
-    "gitlens.codeLens.enabled": false,
+    {
+      "before": ["Y"],
+      "after": ["y", "$"]
+    },
+    {
+      "before": ["<Leader>", "y"],
+      "after": ["\"", "+", "y"]
+    },
+    {
+      "before": ["<Leader>", "d"],
+      "after": ["\"", "+", "d"]
+    },
+    {
+      "before": ["<Leader>", "p"],
+      "after": ["\"", "+", "p"]
+    },
+    {
+      "before": ["<Leader>", "P"],
+      "after": ["\"", "+", "P"]
+    },
+    {
+      "before": ["[", "c"],
+      "commands": ["merge-conflict.previous"]
+    },
+    {
+      "before": ["]", "c"],
+      "commands": ["merge-conflict.next"]
+    }
+  ],
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["<Leader>", "Y"],
+      "after": ["\"", "+", "Y"]
+    }
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<Leader>", "y"],
+      "after": ["\"", "+", "y"]
+    },
+    {
+      "before": ["<Leader>", "d"],
+      "after": ["\"", "+", "d"]
+    },
+    {
+      "before": ["<Leader>", "p"],
+      "after": ["\"", "+", "p"]
+    },
+    {
+      "before": ["<Leader>", "P"],
+      "after": ["\"", "+", "P"]
+    }
+  ],
+  "vim.visualModeKeyBindings": [
+    {
+      "before": ["<Leader>", "Y"],
+      "after": ["\"", "+", "Y"]
+    }
+  ],
+  "window.zoomLevel": 0,
+  "editor.tabSize": 2,
+  "files.trimTrailingWhitespace": true,
+  "editor.renderLineHighlight": "none",
+  "editor.formatOnSave": true,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "[javascript]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    },
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    }
+  },
+  "[typescript]": {
+    "editor.formatOnSave": false,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    }
+  },
+  "[typescriptreact]": {
+    "editor.formatOnSave": false,
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    }
+  },
+  "editor.renderWhitespace": "none",
+  "files.eol": "\n",
+  "editor.wordWrap": "on",
+  "editor.wrappingIndent": "indent",
+  "editor.minimap.enabled": false,
+  "gitlens.advanced.telemetry.enabled": false,
+  "gitlens.blame.heatmap.enabled": false,
+  "gitlens.hovers.currentLine.over": "line",
+  "gitlens.hovers.enabled": false,
+  "window.menuBarVisibility": "toggle",
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "gitlens.codeLens.enabled": false
 }
