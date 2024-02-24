@@ -11,10 +11,10 @@
     ]
   },
   "workbench.colorTheme": "Default Light+",
-  "editor.fontFamily": "Josevka, Hack, Consolas, 'Courier New', monospace",
+  "editor.fontFamily": "'Josevka Slab', Josevka, Hack, Consolas, 'Courier New', monospace",
   "editor.cursorBlinking": "solid",
   "editor.cursorStyle": "block",
-  "editor.fontSize": 20,
+  "editor.fontSize": 32,
   "vim.incsearch": true,
   "vim.hlsearch": true,
   "vim.cursorStylePerMode.insert": "line",
@@ -70,6 +70,10 @@
     {
       "before": ["]", "c"],
       "commands": ["merge-conflict.next"]
+    },
+    {
+      "before": ["<C-p>"],
+      "commands": ["workbench.action.quickOpen"]
     }
   ],
   "vim.normalModeKeyBindings": [
@@ -102,7 +106,6 @@
       "after": ["\"", "+", "Y"]
     }
   ],
-  "window.zoomLevel": 0,
   "editor.tabSize": 2,
   "files.trimTrailingWhitespace": true,
   "editor.renderLineHighlight": "none",
@@ -125,13 +128,13 @@
     }
   },
   "[typescript]": {
-    "editor.formatOnSave": false,
+    "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
       "source.fixAll.eslint": true
     }
   },
   "[typescriptreact]": {
-    "editor.formatOnSave": false,
+    "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
       "source.fixAll.eslint": true
     }
@@ -149,5 +152,14 @@
   "[html]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "gitlens.codeLens.enabled": false
+  "gitlens.codeLens.enabled": false,
+  "cSpell.userWords": ["Colour", "colours", "Usha"],
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "[javascript][javascriptreact][typescript][typescriptreact]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit"
+    }
+  }
 }
